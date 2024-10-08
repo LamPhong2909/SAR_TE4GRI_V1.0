@@ -1,0 +1,26 @@
+[
+  {
+    "id": "diary",
+    "name": "Nhật ký"
+  },
+  {
+    "id": "scan",
+    "name": "Quét"
+  },
+  {
+    "id": "search",
+    "name": "Tìm kiếm"
+  },
+  {
+    "id": "data",
+    "name": "Thông tin"
+  },
+  {
+    "id": "advice",
+    "name": "Lời khuyên"
+  },
+  {
+    "id": "message",
+    "name": "Tư vấn"
+  }
+]
