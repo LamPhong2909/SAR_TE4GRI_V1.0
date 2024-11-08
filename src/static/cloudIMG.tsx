@@ -4,6 +4,11 @@ import { Cloudinary } from "@cloudinary/url-gen";
 const cld = new Cloudinary({
   cloud: { cloudName: "dozxc6jqp" },
 });
+
+//Layout
+export const backgroundImage = cld.image("background_splpcs")
+
+//HOME page
 export const searchIcon = cld.image("chooseImage_adnyec");
 export const calendarIcon = cld.image("timecare_kajvsp");
 export const scanIcon = cld.image("Scan_mngzut");
@@ -21,3 +26,11 @@ export const phanTrang = cld.image("phantrang_pozof4");
 export const heoRu = cld.image("heoru_qrqwms");
 export const domVan = cld.image("domvan_qeybed");
 export const domDen = cld.image("domden_m8uaer");
+
+//SCAN PAGE
+export const khungChup = cld.image('ScanImg_kbmxup');
+export const logo = cld.image('Logo_hyqz85');
+export const cameraIcon = cld.image('camera_l5wjqr');
+export const logoGenius = cld.image('logo_fbhbpu');
+
+

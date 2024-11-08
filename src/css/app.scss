@@ -118,12 +118,48 @@ body {
 }
 
 .App {
-  font-family: Arial, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   padding: 20px;
+  background-image: url("background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  
+}
+ /*Chỉ có logo */
+.header {   
+  width: 55px;
+  height: 85px;
+  position: absolute;
 }
 
-.header {
-  margin-bottom: 20px;
+#inputForm{   /*Đây lại là thứ quyết định background của page scan được scale ra sao*/
+  margin-bottom:800px;
+}
+
+.content{
+  margin-top: 10px;
+}
+
+.Title{ /* Chỉ làm sau khi trong cái section cái  ô chứa 2 phần tử logo camera và chữ Scan đã hoàn tất inline styling chính nó rồi mới*/
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.col-12-m8{
+  min-width: 350px
+}
+.col-12-m8 select {appearance: none;
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
 }
 
 .header__grid {

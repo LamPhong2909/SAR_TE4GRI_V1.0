@@ -41,7 +41,7 @@ export const Categories = () => {
               key={i}
               onClick={() => gotoCategory(category.id)}
               className="flex flex-col space-y-2 items-center"
-              style={{
+              style={{ //Style này là cho cái ô
                 backgroundColor: "#F5F5F5",
                 borderRadius: "25%",
                 padding: "10px",

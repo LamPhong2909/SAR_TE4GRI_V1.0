@@ -1,6 +1,11 @@
 import React, { FC, useState, useEffect } from "react";
-import "../css/app.scss"; // Import your CSS file
-import { useNavigate } from "zmp-ui";
+import "../css/app.scss"; // Import your CSS file 
+import { useNavigate } from "zmp-ui"; // gọi cơ sở để trang này được điều hướng tới
+import * as image from "static/cloudIMG";
+import { AdvancedImage } from "@cloudinary/react";
+import { Position } from "@cloudinary/url-gen/qualifiers";
+
+
 
 const Scan: FC = () => {
   const [method, setMethod] = useState("upload");
@@ -48,7 +53,7 @@ const Scan: FC = () => {
           `<div class="zoom-container"><img src="${imageUrl}" alt="Result" class="zoom-image"/><div class="zoom-controls">Zoom</div></div>`
         );
       }
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const getSettingsFromForm = async (): Promise<{
@@ -103,24 +108,68 @@ const Scan: FC = () => {
     });
 
   return (
-    <div className="App" style={{ paddingTop: "70px" }}>
+
+
+    <div className="App" style={{ paddingTop: "70px" }}> {/*Đại diện cho cả cái giao diện của page scan*/}
       <form id="inputForm" onSubmit={handleSubmit}>
-        <div className="header">
-          <h1>Vì một tương lai nông nghiệp bền vững !</h1>
-        </div>
+        {/*cái trang này chủ yếu là form vì ở bản layout đầu tiên của dự án thì mình chỉ cần nhập vào các trường */}
+
+
+        {/* <AdvancedImage style={{ zIndex: '-10000', width: '480px', height: '800px', position: 'absolute' }}
+            cldImg={image.backgroundImage}
+          /> */}
+
+        <section id=" Phần Header ">
+          <div className="header"   >  {/* position:absolute rất quan trọng*/}
+            <AdvancedImage
+              style={{ marginLeft: "-7px", marginTop: "-50px" }}
+              cldImg={image.logo} />
+
+            <AdvancedImage
+              style={{ marginLeft: "61px", marginTop: "-55px" }}
+              cldImg={image.logoGenius} />
+
+          </div>
+        </section>
+
+        <section id="Phần title">
+          <div className="Title">
+            <AdvancedImage style={{ position: 'absolute', width: '75px', height: '60px' }}
+              cldImg={image.cameraIcon} />
+            <strong style={{ marginTop: '50px' }} >Scan</strong>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+        {/*Thay đổi layout*/}
 
         <div className="content">
           <div className="content__grid">
+
+            {/*Chọn cây -->REDESIGN*/}
             <div className="col-12-m8">
-              <label className="input__label" htmlFor="apiSelect">
+
+              {/* 
+              <label className="input__label" htmlFor="apiSelect"> 
                 {" "}
                 Chọn cây
-              </label>
+              </label> */}
+
+
+              <AdvancedImage cldImg={image.khungChup} ></AdvancedImage>
+
               <select
                 id="apiSelect"
                 className="input"
                 onChange={(e) => setSelectedApi(e.target.value)}
                 value={selectedApi}
+                aria-placeholder="Vui lòng chọn loại cây"
               >
                 <option value=""> </option>
                 <option value="https://detect.roboflow.com/rice-u573g/1?api_key=LNwJ9wZ9UMWq7PGcnsrv">
@@ -131,6 +180,8 @@ const Scan: FC = () => {
                 </option>
               </select>
             </div>
+
+
 
             {/* File Upload */}
             {method === "upload" && (

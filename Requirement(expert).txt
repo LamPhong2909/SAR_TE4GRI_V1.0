@@ -1,0 +1,3 @@
+Vì đây là source code của 1 dự án chuyên nghiệp thuộc biên chế công ty TECH4Z thuộc tập đoàn NOMECY corp nên sẽ phải đáp ứng các yêu cầu sau đây:
+*** Sử dụng thuần thục GIT (VERSION CONTROL)
+*** Có discipline giờ nào làm việc nào tránh việc cái này lấn cái kia gây mệt mỏi cơ thể do thiếu ngủ và hiệu suất kém
