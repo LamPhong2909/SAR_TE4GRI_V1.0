@@ -7,7 +7,7 @@ import {
 } from "zmp-sdk";
 import { useLocation } from "react-router";
 import { useResetRecoilState } from "recoil";
-import { cartState } from "state";
+import { cartState } from "../state";
 import {
   IconPaymentFail,
   IconPaymentLoading,

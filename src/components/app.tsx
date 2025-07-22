@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { App, ZMPRouter, SnackbarProvider } from "zmp-ui";
 import { RecoilRoot } from "recoil";
-import { getConfig } from "utils/config";
+import { getConfig } from "../utils/config";
 import { Layout } from "./layout";
 import { ConfigProvider } from "./config-provider";
 import { Splash_screen } from "./Splash screen"; //import source code frame splash

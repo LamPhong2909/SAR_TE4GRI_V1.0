@@ -12,6 +12,8 @@
       "es6",
       "es7",
       "es2017"
+
+
     ],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -33,7 +35,17 @@
     "removeComments": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "baseUrl": "src"
+    "baseUrl": "src",
+
+    "paths": {
+      "components/*": ["components/*"],
+      "pages/*": ["pages/*"],
+      "state": ["state.ts"],
+      "static/*": ["static/*"],
+      "types/*": ["types/*"],
+      "utils/*": ["utils/*"],
+      "hooks": ["hooks.ts"]
+    }
   },
   "exclude": [
     "node_modules"
