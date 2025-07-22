@@ -2,7 +2,7 @@
   "cwd": "/Users/lap15182-local/Desktop/zalo/zaui-coffee",
   "name": "ZaUI Coffee",
   "framework": "react-typescript",
-  "cssPreProcessor": "scss",
+  "cssPreProcessor": "s css",
   "includeTailwind": true,
   "package": "zmp-ui",
   "stateManagement": "recoil",

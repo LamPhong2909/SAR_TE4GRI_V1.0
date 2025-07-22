@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\zmp-cli.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zmp-cli.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\pages\\scan.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\scan.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\global.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\global.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "zmp-cli.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\zmp-cli.json",
+              "RelativeDocumentMoniker": "zmp-cli.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\zmp-cli.json",
+              "RelativeToolTip": "zmp-cli.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T16:01:13.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "scan.tsx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\pages\\scan.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\scan.tsx",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\pages\\scan.tsx",
+              "RelativeToolTip": "src\\pages\\scan.tsx",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-06T16:00:44.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T05:20:25.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "global.d.ts",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\global.d.ts",
+              "RelativeDocumentMoniker": "src\\global.d.ts",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\TE4GRI project - Tech4Z- NoMeCy corp\\Te4gri official third phase\\[SOURCE] TE4GRI (official alpha)\\src\\global.d.ts",
+              "RelativeToolTip": "src\\global.d.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-02-10T05:19:46.441Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

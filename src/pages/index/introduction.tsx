@@ -1,3 +1,5 @@
+{/* 5*/ }
+
 import { FinalPrice } from "components/display/final-price";
 import { DisplayPrice } from "components/display/price";
 import { ProductPicker } from "components/product/picker";
@@ -19,30 +21,30 @@ export const RecommendContent: FC = () => {
 
   return (
     <Section title="Hướng dẫn sử dụng" padding="title-only">
- <div className="tutorial flex justify-between">
-  <AdvancedImage 
-    cldImg={image.step1} 
-    alt="bước 1" 
-    style={{ width: '87px', height: '101px', marginLeft: '50px'}} 
-  />
-  <AdvancedImage 
-    cldImg={image.step2} 
-    alt="bước 2" 
-    style={{ width: '87px', height: '108px'}} 
-  /> 
-  <AdvancedImage 
-    cldImg={image.step3} 
-    alt="bước 3" 
-    style={{ width: '87px', height: '140px', marginRight: '50px' }} 
-  />
-</div>
+      <div className="tutorial flex justify-between">
+        <AdvancedImage
+          cldImg={image.step1}
+          alt="bước 1"
+          style={{ width: '87px', height: '101px', marginLeft: '50px' }}
+        />
+        <AdvancedImage
+          cldImg={image.step2}
+          alt="bước 2"
+          style={{ width: '87px', height: '108px' }}
+        />
+        <AdvancedImage
+          cldImg={image.step3}
+          alt="bước 3"
+          style={{ width: '87px', height: '140px', marginRight: '50px' }}
+        />
+      </div>
 
-  </Section>
+    </Section>
   );
 };
 
 export const Introduction: FC = () => {
   return (
-      <RecommendContent />
+    <RecommendContent />
   );
 };

@@ -1,247 +1,529 @@
-body {
-  background-color: var(--zmp-background-color);
-  user-select: none;
-}
-
-.zaui-routes {
-  height: 100%;
-}
-
-.zaui-page {
-  min-height: unset;
-}
-
-.zaui-header {
-  position: sticky;
-  height: auto;
-  margin-bottom: 0;
-  flex: none;
-
-  &::after {
-    display: none;
+/* ==========================================================================
+   1. CÁC STYLE TOÀN CỤC VÀ CHO ZALO UI HIỆN TẠI CỦA BẠN (GIỮ NGUYÊN)
+   ========================================================================== */
+   body { // Sửa lại từ "zbody" trong file gốc của bạn, có vẻ là lỗi typing
+    background-color: var(--zmp-background-color);
+    user-select: none;
   }
-}
-
-.zaui-input-affix-wrapper {
-  margin: 0;
-}
-
-.border-inset {
-  border: 0.5px solid rgba(0, 0, 0, 0.1);
-}
-
-.zaui-text-xxxxSmall {
-  line-height: 16px;
-}
-
-.zaui-btn-tertiary,
-.zaui-btn-tertiary.zaui-btn-highlight,
-.zaui-bottom-navigation-item-active {
-  color: var(--zmp-primary-color);
-}
-
-.zaui-btn-primary,
-.zaui-btn-primary.zaui-btn-highlight,
-.zaui-radio-checked .zaui-radio-checkmark,
-.zaui-btn-primary:active,
-.zaui-btn-primary.zaui-btn-highlight:active,
-.zaui-btn-primary:focus-visible,
-.zaui-btn-primary.zaui-btn-highlight:focus-visible {
-  background-color: var(--zmp-primary-color);
-}
-
-.zaui-btn-primary:active,
-.zaui-btn-primary.zaui-btn-highlight:active,
-.zaui-btn-primary:focus-visible,
-.zaui-btn-primary.zaui-btn-highlight:focus-visible {
-  opacity: 0.9;
-}
-
-.zaui-picker-item-selected {
-  color: var(--zmp-primary-color);
-}
-
-.zaui-input-affix-wrapper-focused,
-.zaui-input-affix-wrapper:hover,
-.zaui-input-affix-wrapper:focus,
-.zaui-input-affix-wrapper:focus-visible {
-  border-color: var(--zmp-primary-color);
-}
-
-.zaui-tabs-tabbar-active-line {
-  background-color: var(--zmp-primary-color);
-}
-
-.category-tabs {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  .zaui-tabs-tabbar {
+  .zaui-routes {
+    height: 100%;
+  }
+  .zaui-page {
+    min-height: unset;
+  }
+  .zaui-header {
+    position: sticky;
+    height: auto;
+    margin-bottom: 0;
     flex: none;
-  }
-  .zaui-tab-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    overflow-y: auto;
-  }
-  .zaui-tab {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-}
-
-.swiper-pagination.swiper-pagination-horizontal {
-  display: flex;
-  gap: 4px;
-  background: rgba(0, 0, 0, 0.2);
-  width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 100px;
-  padding: 4px;
-  bottom: 12px;
-
-  > .swiper-pagination-bullet {
-    width: 4px;
-    height: 4px;
-    margin: 0;
-    background: rgba(255, 255, 255, 0.6);
-
-    &.swiper-pagination-bullet-active {
-      background: #ffffff;
-      transform: scale(1.5);
+    &::after {
+      display: none;
     }
   }
-}
-
-.App {
-  font-family:'Times New Roman', Times, serif;
-  padding: 20px;
-  background-image: url("background.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100%;
+  .zaui-input-affix-wrapper {
+    margin: 0;
+  }
+  .border-inset {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .zaui-text-xxxxSmall {
+    line-height: 16px;
+  }
+  .zaui-btn-tertiary,
+  .zaui-btn-tertiary.zaui-btn-highlight,
+  .zaui-bottom-navigation-item-active {
+    color: var(--zmp-primary-color);
+  }
+  .zaui-btn-primary,
+  .zaui-btn-primary.zaui-btn-highlight,
+  .zaui-radio-checked .zaui-radio-checkmark,
+  .zaui-btn-primary:active,
+  .zaui-btn-primary.zaui-btn-highlight:active,
+  .zaui-btn-primary:focus-visible,
+  .zaui-btn-primary.zaui-btn-highlight:focus-visible {
+    background-color: var(--zmp-primary-color);
+  }
+  .zaui-btn-primary:active,
+  .zaui-btn-primary.zaui-btn-highlight:active,
+  .zaui-btn-primary:focus-visible,
+  .zaui-btn-primary.zaui-btn-highlight:focus-visible {
+    opacity: 0.9;
+  }
+  .zaui-picker-item-selected {
+    color: var(--zmp-primary-color);
+  }
+  .zaui-input-affix-wrapper-focused,
+  .zaui-input-affix-wrapper:hover,
+  .zaui-input-affix-wrapper:focus,
+  .zaui-input-affix-wrapper:focus-visible {
+    border-color: var(--zmp-primary-color);
+  }
+  .zaui-tabs-tabbar-active-line {
+    background-color: var(--zmp-primary-color);
+  }
+  .category-tabs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .zaui-tabs-tabbar {
+      flex: none;
+    }
+    .zaui-tab-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow-y: auto;
+    }
+    .zaui-tab {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+  .swiper-pagination.swiper-pagination-horizontal {
+    display: flex;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    padding: 4px;
+    bottom: 12px;
+    > .swiper-pagination-bullet {
+      width: 4px;
+      height: 4px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.6);
+      &.swiper-pagination-bullet-active {
+        background: #ffffff;
+        transform: scale(1.5);
+      }
+    }
+  }
   
-}
- /*Chỉ có logo */
-.header {   
-  width: 55px;
-  height: 85px;
-  position: absolute;
-}
+  .App {
+    font-family:'Times New Roman', Times, serif; // Cân nhắc đổi font hiện đại hơn cho toàn app hoặc chỉ cho trang Scan
+    padding: 20px; // Lưu ý: padding này sẽ ảnh hưởng đến `.scan-page-container` nếu nó nằm trong `.App`
+    background-image: url("background.png"); // Đảm bảo path này đúng
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  .header { // Class .header toàn cục
+    width: 55px;
+    height: 85px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #inputForm{ // ID này khá cụ thể, có thể chỉ dùng cho trang Scan cũ?
+    margin-bottom:800px; // Giá trị này rất lớn, cần xem xét lại
+  }
+  
+  .content{ // Class .content toàn cục
+    margin-top: 10px;
+    z-index: 1;
+  }
+  
+  .Title{ // Class .Title toàn cục
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    z-index: 1;
+  }
+  
+  .col-12-m8{ // Class .col-12-m8 toàn cục
+    min-width: 350px
+  }
+  .col-12-m8 select { // Style cho select bên trong .col-12-m8
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .header__grid { // Class .header__grid toàn cục
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__logo { // Class .header__logo toàn cục
+    height: 40px;
+  }
+  
+  .input { // Class .input toàn cục (Trường nhập liệu)
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+    color: #000;
+  }
+  .input--left { // Modifier cho .input
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .bttn { // Class .bttn toàn cục (Button)
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .bttn.active { // Modifier cho .bttn
+    background-color: #0056b3;
+  }
+  
+  .flex { // Class .flex toàn cục
+    display: flex;
+  }
+  
+  .result { // Class .result toàn cục (Hình ảnh hiển thị khi AI chẩn đoán)
+    margin-top: 0px;
+    z-index: 800000000; // z-index rất lớn
+    position: absolute;
+  }
+  
+  .submit { // Class .submit toàn cục (Button submit)
+    margin-top: 20px;
+    background-color: #28a745;
+  }
+  .submit:hover {
+    background-color: #218838;
+  }
+  
+  .zoom-container { // Class .zoom-container toàn cục
+    position: relative;
+    display: inline-block;
+    z-index: 8000000000; // z-index cực kỳ lớn
+  }
+  .zoom-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    margin-top: -10px;
+  }
+  .zoom-container:hover .zoom-image {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+  .zoom-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+  }
+  .zoom-container:hover .zoom-controls {
+    display: block;
+  }
+  
+  
+  /* ==========================================================================
+     2. CSS DÀNH RIÊNG CHO TRANG SCAN (ĐƯỢC "ĐÓNG GÓI")
+     ========================================================================== */
+  
+  .scan-page-container {
+    /* Các style cơ bản cho toàn bộ trang Scan để ghi đè hoặc bổ sung .App nếu cần */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; // Chiều caoเต็ม màn hình
+    background: linear-gradient(to bottom, #00A98F, #0052D4); // Gradient nền từ file Thử.docx
+    padding: 15px; // Padding cho toàn trang Scan
+    box-sizing: border-box;
+    color: white; // Màu chữ mặc định cho trang Scan
+    font-family: 'Roboto', sans-serif; // Font chữ hiện đại hơn cho trang Scan
+  
+    /* Nếu .scan-page-container nằm trong .App, và bạn muốn ghi đè background của .App: */
+    background-image: none; // Tắt background-image của .App
+    // Hoặc:
+    // background: linear-gradient(to bottom, #00A98F, #0052D4) !important; // Dùng !important nếu cần thiết (hạn chế)
+  
+    /* Header của trang Scan */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-shrink: 0; // Không cho header co lại
+  
+      .app-logo-small { // Logo app trong header của trang Scan
+        width: 45px; // Kích thước logo (điều chỉnh cho phù hợp)
+        height: 45px;
+        object-fit: contain;
+      }
+  
+      .page-title { // Tiêu đề "Scan"
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        // Điều chỉnh để tiêu đề thực sự ở giữa nếu logo có kích thước cố định
+        // Ví dụ: nếu logo là 45px, và muốn title cách đều 2 bên:
+        // padding-left: 45px; // Bằng chiều rộng logo để cân bằng không gian
+        // padding-right: 45px; // Hoặc để trống nếu logo ở góc và title chỉ cần căn giữa không gian còn lại
+  
+        .title-icon { // Icon camera cạnh chữ "Scan"
+          width: 28px; // Kích thước icon camera
+          height: 28px;
+          margin-right: 8px;
+          object-fit: contain;
+        }
+        h1 {
+          font-size: 26px; // Kích thước chữ "Scan"
+          font-weight: bold;
+          margin: 0;
+          color: white; // Đảm bảo màu chữ cho title
+        }
+      }
+    }
+  
+    /* Khu vực hiển thị Camera/Ảnh của trang Scan */
+    .scan-area-wrapper {
+      flex-grow: 1; // Cho phép khu vực scan chiếm phần lớn không gian còn lại
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; // Khoảng cách tới phần controls
+      min-height: 200px; // Chiều cao tối thiểu để không bị xẹp khi chưa có nội dung
+  
+      .scan-area-content { // Nội dung bên trong (camera view, ảnh preview, ảnh kết quả)
+        width: 90vw; // Chiều rộng tương đối
+        max-width: 380px; // Giới hạn chiều rộng tối đa
+        aspect-ratio: 3 / 4; // Tỷ lệ khung hình (điều chỉnh theo thiết kế của bạn, ví dụ 4/3 hoặc 1/1)
+        background-color: rgba(0,0,0,0.2); // Màu nền tạm thời nếu camera chưa load
+        border-radius: 12px;
+        overflow: hidden; // Quan trọng để giới hạn camera view/ảnh và bo góc
+        position: relative;
+        display: flex; // Để căn giữa nội dung bên trong nếu có
+        justify-content: center;
+        align-items: center;
+  
+        // Style cho các trạng thái khác nhau của scan-area-content
+        &.camera-live-preview,
+        &.image-preview-container,
+        &.processing-indicator,
+        &.result-display-container {
+          img, .zmp-camera-preview-component { // Target img và component camera preview (tên class ZMP có thể khác)
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // 'cover' để lấp đầy, 'contain' để thấy toàn bộ (chọn 1)
+          }
+        }
+        .processing-indicator p {
+          color: white;
+          font-size: 16px;
+          text-align: center;
+          padding: 20px;
+        }
+        .error-message {
+          color: #ffdddd;
+          padding: 20px;
+          text-align: center;
+        }
+        // CSS cho component CameraPreview của ZMP SDK nếu nó được nhúng vào đây
+        // Ví dụ:
+        // #camera-view-target, .zmp-camera-preview-component {
+        //   width: 100%;
+        //   height: 100%;
+        // }
+      }
+  
+      .scan-overlay-frame { // Khung viền chụp ảnh (AdvancedImage _image.khungChup)
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%);
+          width: calc(100% + 4px); // Kích thước khung viền (hơi lớn hơn scan-area-content một chút để đẹp)
+          height: calc(100% + 4px); // Điều chỉnh tùy theo thiết kế của _image.khungChup
+          max-width: calc(380px + 4px); // Tương ứng max-width của scan-area-content
+          // aspect-ratio: 3 / 4; // Giữ tỷ lệ giống scan-area-content
+          object-fit: contain; // Đảm bảo khung không bị méo
+          pointer-events: none; // Để không cản trở tương tác
+          z-index: 1; // Nằm trên camera/ảnh nhưng dưới placeholder text
+          .advanced-image { // Nếu AdvancedImage tạo ra một div bao bọc img
+              width: 100%;
+              height: 100%;
+          }
+      }
+  
+       .scan-area-placeholder-text { // Chữ "Đặt cây vào ô quét..."
+          position: absolute;
+          bottom: 15px; // Vị trí từ đáy của scan-area-wrapper
+          left: 50%;
+          transform: translateX(-50%);
+          color: #E0E0E0; // Màu xám nhạt hơn
+          font-size: 13px;
+          background-color: rgba(0,0,0,0.35);
+          padding: 6px 12px;
+          border-radius: 10px;
+          z-index: 2; // Nằm trên overlay frame
+          white-space: nowrap;
+      }
+    }
+  
+    /* Phần điều khiển của trang Scan */
 
-#inputForm{   /*Đây lại là thứ quyết định background của page scan được scale ra sao*/
-  margin-bottom:800px;
-}
 
-.content{
-  margin-top: 10px;
-}
-
-.Title{ /* Chỉ làm sau khi trong cái section cái  ô chứa 2 phần tử logo camera và chữ Scan đã hoàn tất inline styling chính nó rồi mới*/
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 40px;
-}
-
-.col-12-m8{
-  min-width: 350px
-}
-.col-12-m8 select {appearance: none;
-  width: 100%;
-  font-size: 1.15rem;
-  padding: 0.675em 6em 0.675em 1em;
-  background-color: #fff;
-  border: 1px solid #caced1;
-  border-radius: 0.25rem;
-  color: #000;
-  cursor: pointer;
-}
-
-.header__grid {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__logo {
-  height: 40px;
-}
-
-.input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.input--left {
-  border-radius: 4px 0 0 4px;
-}
-
-.bttn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.bttn.active {
-  background-color: #0056b3;
-}
-
-.flex {
-  display: flex;
-}
-
-.result {
-  margin-top: 20px;
-}
-
-.submit {
-  margin-top: 20px;
-  background-color: #28a745;
-}
-
-.submit:hover {
-  background-color: #218838;
-}
-/* App.css */
-.zoom-container {
-  position: relative;
-  display: inline-block;
-}
-
-.zoom-image {
-  width: 100%;
-  transition: transform 0.3s ease;
-  /* Ensure the image fits the container */
-  max-width: 100%;
-  height: auto;
-}
-
-.zoom-container:hover .zoom-image {
-  transform: scale(2); /* Zoom factor */
-  cursor: zoom-out;
-}
-
-.zoom-controls {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  display: none;
-}
-
-.zoom-container:hover .zoom-controls {
-  display: block;
-}
+    .controls-section {
+      flex-shrink: 0; // Không cho co lại
+      padding-bottom: 10px; // Khoảng cách với đáy màn hình (nếu không có nav bar)
+  
+      .main-controls-bar { // Thanh bo tròn chứa 3 nút chính
+        display: flex;
+        justify-content: space-between; // Nút thư viện và chọn cây ở hai đầu, nút scan ở giữa
+        align-items: center;
+        background-color: white;
+        border-radius: 35px; // Bo tròn mạnh hơn
+        padding: 8px 15px; // Padding bên trong thanh
+        margin-bottom: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  
+        .control-button { // Style chung cho các nút trên thanh
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto; // Không co giãn, kích thước cố định
+  
+          // Target AdvancedImage bên trong nút
+          .advanced-image, img {
+            width: 28px; // Kích thước icon mặc định
+            height: 28px;
+            object-fit: contain;
+          }
+        }
+  
+        .scan-action-button { // Nút tròn scan ở giữa
+          flex: 0 0 auto; // Không co giãn
+          margin: 0 10px; // Khoảng cách với 2 nút còn lại
+          .advanced-image, img {
+            width: 55px; // Kích thước lớn hơn cho nút scan chính
+            height: 55px;
+          }
+        }
+  
+        .plant-selector-wrapper { // Phần chọn cây bên phải
+          // flex-grow: 1; // Không cần thiết nếu các nút có kích thước cố định
+          display: flex;
+          justify-content: flex-end; // Căn phải
+          .plant-selector-trigger { // Nút hiển thị tên cây và icon dropdown
+            color: #212121; // Màu chữ đậm cho dễ đọc
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 10px; // Padding để dễ nhấn
+            border-radius: 20px; // Bo tròn nhẹ cho chính nó
+            &:hover {
+              background-color: #f0f0f0;
+            }
+            .dropdown-indicator {
+              margin-left: 8px;
+              font-weight: bold;
+              transition: transform 0.2s ease;
+              display: inline-block; // Để transform hoạt động
+              &.open {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+  
+      .plant-dropdown-menu { // Menu dropdown chọn cây
+        background-color: #ffffff; // Nền trắng
+        border-radius: 12px; // Bo góc
+        margin-top: -5px; // Nằm chồng lên main-controls-bar một chút
+        padding: 8px 0; // Padding trên dưới
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        position: relative; // Hoặc absolute nếu cần định vị chính xác hơn
+        z-index: 100; // Đảm bảo nổi lên trên các phần tử khác
+  
+        .plant-dropdown-item {
+          padding: 12px 20px;
+          color: #333333;
+          font-size: 16px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          &:hover {
+            background-color: #f5f5f5; // Màu nền khi hover
+          }
+          &.selected {
+            background-color: #E0F2F1; // Màu nền khi được chọn (xanh nhạt)
+            color: #00796B; // Màu chữ khi được chọn (xanh đậm)
+            font-weight: 500;
+          }
+          .plant-item-icon { // Style cho icon cây (nếu có)
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            object-fit: contain;
+          }
+        }
+      }
+  
+      // Controls cho màn hình xác nhận ảnh và hiển thị kết quả
+      .confirmation-controls, .post-result-controls {
+        text-align: center;
+        padding: 10px 0;
+        .confirmation-text, .result-message-text {
+          margin-bottom: 18px;
+          font-size: 15px; // Chữ nhỏ hơn một chút
+          line-height: 1.5;
+          padding: 0 15px;
+          color: #f0f0f0; // Màu chữ sáng hơn trên nền gradient
+        }
+        .buttons-row {
+          display: flex;
+          justify-content: space-around; // Cách đều các nút
+          align-items: center;
+          padding: 0 20px; // Padding hai bên để nút không quá sát viền
+  
+          .control-button { // Nút tròn (back/tick)
+            background: rgba(255,255,255,0.15); // Nền mờ hơn
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            width: 55px; // Kích thước nút
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+  
+            .advanced-image, img {
+              width: 28px; // Kích thước icon bên trong
+              height: 28px;
+              object-fit: contain;
+            }
+            &:active { // Hiệu ứng khi nhấn
+              background: rgba(255,255,255,0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /* ==========================================================================
+     3. CÁC STYLE TOÀN CỤC KHÁC (NẾU CÓ VÀ NẰM SAU CÙNG)
+     ========================================================================== */
+  // Ví dụ:
+  // .some-other-global-class { ... }

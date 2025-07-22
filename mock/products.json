@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Caramel Latte",
-    "price": 35000,
+    "name": "Đạo ôn",
+    "price": "Lúa",
     "image": "https://stc-zmp.zadn.vn/templates/zaui-coffee/dummy/product-square-1.webp",
     "description": "There is a set of mock banners available <u>here</u> in three colours and in a range of standard banner sizes",
     "categoryId": ["coffee", "drinks"],

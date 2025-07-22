@@ -67,6 +67,6 @@ export function useToBeImplemented() {
   return () =>
     snackbar.openSnackbar({
       type: "success",
-      text: "Chức năng dành cho các bên tích hợp phát triển...",
+      text: "Chức năng đang trong giai đoạn phát triển, hãy chờ the GENIUS nhé!",
     });
 }

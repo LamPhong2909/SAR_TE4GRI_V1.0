@@ -29,8 +29,24 @@ export const domDen = cld.image("domden_m8uaer");
 
 //SCAN PAGE
 export const khungChup = cld.image('ScanImg_kbmxup');
-export const logo = cld.image('Logo_hyqz85');
+export const logo = cld.image('Logo_hyqz85'); //Logo App 
 export const cameraIcon = cld.image('camera_l5wjqr');
 export const logoGenius = cld.image('logo_fbhbpu');
+export const scanButton = cld.image('ScanIcon_ky0cqd');
+export const khungTrang = cld.image ('truongIcon_ymmsyn');
+export const chooseImage = cld.image('chooseImage_adnyec');
+export const backArrowIcon=cld.image('backIcon_mf24nb');
+export const tickIcon = cld.image('acceptIcon_c1gjvg');
+export const cornIcon=cld.image('cornIcon_ea05og');
+export const riceIcon=cld.image('paddyIcon_iu3yfi');
+
+
+
+
+// LOADING PAGE
+// export const anhNen = cld.image('Background_home_bs115l')
+export const gocTrai = cld.image('Leaves_corner_home_nuerd3')
+export const gocPhai = cld.image('right_corner_leave_home_raoyen')
+export const logoSAR = cld.image('SAR_department_logo_ve6pp8')
 
 

@@ -32,6 +32,8 @@ export const categoriesState = selector<Category[]>({
   get: () => categories,
 });
 
+
+
 export const productsState = selector<Product[]>({
   key: "products",
   get: async () => {
@@ -41,15 +43,16 @@ export const productsState = selector<Product[]>({
       .default as Variant[];
     return products.map(
       (product) =>
-        ({
-          ...product,
-          variants: variants.filter((variant) =>
-            product.variantId.includes(variant.id)
-          ),
-        } as Product)
+      ({
+        ...product,
+        variants: variants.filter((variant) =>
+          product.variantId.includes(variant.id)
+        ),
+      } as Product)
     );
   },
 });
+
 
 export const recommendProductsState = selector<Product[]>({
   key: "recommendProducts",
@@ -68,12 +71,12 @@ export const productsByCategoryState = selectorFamily<Product[], string>({
   key: "productsByCategory",
   get:
     (categoryId) =>
-    ({ get }) => {
-      const allProducts = get(productsState);
-      return allProducts.filter((product) =>
-        product.categoryId.includes(categoryId)
-      );
-    },
+      ({ get }) => {
+        const allProducts = get(productsState);
+        return allProducts.filter((product) =>
+          product.categoryId.includes(categoryId)
+        );
+      },
 });
 
 export const cartState = atom<Cart>({
@@ -145,7 +148,7 @@ export const storesState = atom<Store[]>({
   default: [
     {
       id: 1,
-      name: "VNG Campus Store",
+      name: "The Genius CLub",
       address:
         "Khu chế xuất Tân Thuận, Z06, Số 13, Tân Thuận Đông, Quận 7, Thành phố Hồ Chí Minh, Việt Nam",
       lat: 10.741639,
@@ -307,3 +310,5 @@ export const orderNoteState = atom({
   key: "orderNote",
   default: "",
 });
+
+

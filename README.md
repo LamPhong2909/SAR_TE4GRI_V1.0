@@ -94,7 +94,13 @@ Folder structure:
   - **`global.d.ts`**: Contains TypeScript declarations for third-party modules and global objects.
   - **`state.ts`**: State management, containing [Recoil](https://recoiljs.org/docs/introduction/getting-started#atom)'s atoms and selectors.
 
+
+
+
 - **`mock`**: Example data as \*.json files.
+
+
+
 
 - **`app-config.json`**: [Global configuration](https://mini.zalo.me/intro/getting-started/app-config/) for your Mini App.
 
@@ -141,7 +147,7 @@ export const productsState = selector<Product[]>({
     const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
     return data.products.map(
-      ({ id, title, price, images, description, category }) =>
+      ({ id, price, title, images, description, category }) =>
         <Product>{
           id,
           name: title,

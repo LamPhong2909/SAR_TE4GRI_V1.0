@@ -1,0 +1,3 @@
+[FEATURE] Page scan - After taking picture directly from built-in camera --> Place the picture inside the frame for the user to confirm because if it's not uploading user won't know if the picture is taken or not 
+	Solution: Changing the "zoom-image" in app.scss from  the class of  the output photo to raw image 
+	1. Create a new function for the raw image using the ne

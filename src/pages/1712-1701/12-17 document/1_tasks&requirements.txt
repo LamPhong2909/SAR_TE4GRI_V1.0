@@ -1,0 +1,7 @@
+[FIX]: Roboflow model AI - Everything dissapeared
+--> Opportunity for combining Roboflow study session with AIA project
+[FEATURE]: Splash screen
+            Chatbot for detecting diseases and answering questions
+            Introduction page
+[FIX]: Fix the refresh token causing error in GITHUB
+            

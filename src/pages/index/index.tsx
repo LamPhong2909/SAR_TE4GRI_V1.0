@@ -1,9 +1,10 @@
+//SOURCE NÀY ĐỂ GHÉP VÀO FRAME HOMEPAGE
 import React, { Suspense } from "react";
 import { Box, Page } from "zmp-ui";
 import { Inquiry } from "./inquiry";
 import { Welcome } from "./welcome";
-import { Banner } from "./banner";
-import { Categories } from "./categories";
+import { Banner } from "./banner"; // Có banner
+import { Categories } from "./categories"; //
 import { Introduction } from "./introduction";
 import { ProductList } from "./product-list";
 import { Divider } from "components/divider";

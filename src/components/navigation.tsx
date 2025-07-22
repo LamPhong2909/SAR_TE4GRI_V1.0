@@ -17,9 +17,8 @@ const tabs: Record<string, MenuItem> = {
     icon: <Icon icon="zi-camera" />,
   },
   "/cart": {
-    label: "Giỏ hàng",
-    icon: <CartIcon />,
-    activeIcon: <CartIcon active />,
+    label: "About us",
+    icon: <Icon icon ='zi-group' />,
   },
   "/profile": {
     label: "Cá nhân",

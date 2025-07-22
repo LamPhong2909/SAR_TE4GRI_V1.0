@@ -6,7 +6,7 @@
     "statusBarColor": "#fffffff",
     "leftButton": "none",
     "statusBar": "transparent",
-    "selfControlLoading": false,
+    "selfControlLoading": true,
     "hideAndroidBottomNavigationBar": false,
     "hideIOSSafeAreaBottom": false,
     "actionBarHidden": true
