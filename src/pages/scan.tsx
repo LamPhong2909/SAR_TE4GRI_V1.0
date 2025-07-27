@@ -278,7 +278,10 @@ Các thành phần cần test(sử dụng folder "Testing" trong src để chứ
 import React, { FC, useState, useEffect, useRef, useCallback } from "react";
 import "../css/app.scss"; 
 import { useNavigate } from "zmp-ui"; 
-import * as _image from "static/cloudIMG"; 
+import * as _image from "static/cloudIMG"; //Đây là cách import ảnh static từ Cloudinary trong ZMP SDK, bạn có thể thay đổi theo cách bạn muốn.
+// import { openImageLibrary } from "zmp-sdk/apis"; // Giả sử bạn có một hàm để mở thư viện ảnh và chọn ảnh
+//import { handleCaptureImage, processCapturedImage } from "../utils/scanUtils"; // Gi
+import { Button, Icon, Text } from "zmp-ui"; // 
 import { AdvancedImage } from "@cloudinary/react"; 
 
 import {
@@ -303,8 +306,9 @@ interface Plant {
     icon?: any;
 }
 const plants: Plant[] = [
-    { name: "Cây Lúa", value: "https://serverless.roboflow.com/-experimental-newphase-rice-detection-2/2?api_key=GlIzXgqHyKlL4WamnCY6", },
+    { name: "Cây Lúa", value: "https://serverless.roboflow.com/-experimental-newphase-rice-detection-2/6?api_key=GlIzXgqHyKlL4WamnCY6", }, // Updated TE4VISION model for Rice 26-07
     { name: "Cây Ngô", value: "https://serverless.roboflow.com/cn-detection/7?api_key=GlIzXgqHyKlL4WamnCY6" },
+    // { name: "Phát hiện cây", value: "https://serverless.roboflow.com/pt-detection/17?api_key=GlIzXgqHyKlL4WamnCY6"}
 ];
 // Enum cho các trạng thái của trang Scan
 enum ScanState {
@@ -667,6 +671,7 @@ const Scan: FC = () => {
                         <button onClick={handleRetakeOrRestartScan} className="control-button icon-button back-to-scan-button">
                             <AdvancedImage cldImg={_image.backArrowIcon} alt="Quét lại" />
                         </button>
+    
                         <button onClick={() => navigate('/chatbot')} className="control-button icon-button to-chatbot-button">
                             <AdvancedImage cldImg={_image.tickIcon} alt="Đến Chatbot" /> 
                         </button>

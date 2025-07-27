@@ -67,4 +67,6 @@
 //       17. **Phản hồi người dùng**: Cần có các tùy chọn để người dùng có thể gửi phản hồi về trải nghiệm của họ với chatbot, giúp cải thiện dịch vụ trong tương lai.
 //       18. **Tính năng bảo trì và cập nhật**: Cần có các công cụ để người phát triển có thể dễ dàng bảo trì và cập nhật giao diện, bao gồm việc quản lý phiên bản và triển khai các bản cập nhật mới.
 //       19. **Tính năng phân tích và báo cáo**: Cần có các công cụ để theo dõi và phân tích hiệu suất của chatbot, bao gồm số lượng tin nhắn, thời gian phản hồi, và các chỉ số khác để cải thiện trải nghiệm người dùng.
-//       20. **Tính năng bảo mật**: Cần có các biện pháp bảo mật để bảo vệ dữ liệu người dùng, bao gồm mã hóa dữ liệu, xác thực người dùng, và các biện pháp phòng ngừa tấn công mạng.
+//       20. **Tính năng bảo mật**: Cần có các biện pháp bảo mật để bảo vệ dữ liệu người dùng, bao gồm mã hóa dữ liệu, xác thực người dùng, và các biện pháp phòng ngừa tấn công mạng
+// 21. **Tính năng tùy chỉnh giao diện**: Cần có các tùy chọn để người dùng có thể tùy chỉnh giao diện của chatbot, bao gồm màu sắc, kiểu chữ, và bố cục hiển thị tin nhắn.
+//       22. **Tính năng thông báo**: Cần có các tùy    
