@@ -70,3 +70,5 @@
 //       20. **Tính năng bảo mật**: Cần có các biện pháp bảo mật để bảo vệ dữ liệu người dùng, bao gồm mã hóa dữ liệu, xác thực người dùng, và các biện pháp phòng ngừa tấn công mạng
 // 21. **Tính năng tùy chỉnh giao diện**: Cần có các tùy chọn để người dùng có thể tùy chỉnh giao diện của chatbot, bao gồm màu sắc, kiểu chữ, và bố cục hiển thị tin nhắn.
 //       22. **Tính năng thông báo**: Cần có các tùy    
+
+

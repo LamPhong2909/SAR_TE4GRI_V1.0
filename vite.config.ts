@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import react from "@vitejs/plugin-react";
-
+import path from "path";
 // Giải thích : // - Đoạn code này là cấu hình cho Vite, một công cụ xây dựng ứng dụng web hiện đại.
 // - Nó sử dụng các plugin để hỗ trợ TypeScript, React và Vue.
 //Dùng để xử lý các đường dẫn trong tsconfig.json, giúp Vite hiểu được các alias và đường dẫn tương đối.
@@ -57,3 +57,5 @@ export default () => {
 //        reporter: ["text", "json", "html"], // - Chỉ định các định dạng báo cáo độ bao phủ mã nguồn, bao gồm văn bản, JSON và HTML.
 //        include: ["src/**/*.{ts,tsx}"], // - Chỉ định các tệp mã nguồn cần thu thập độ bao phủ, trong trường hợp này là tất cả các tệp TypeScript và TypeScript React trong thư mục `src`.
 //        exclude: [ // - Loại trừ các tệp và thư mục không cần thiết khỏi quá trình thu thập độ bao phủ, giúp tập trung vào các phần mã nguồn quan trọng.
+
+
