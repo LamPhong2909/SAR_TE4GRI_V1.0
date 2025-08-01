@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    // "ESNext" đôi khi quá mới cho một số môi trường runtime của Mini App.
+    // "ES2020" là một lựa chọn an toàn và hiện đại hơn, được hỗ trợ rộng rãi.
+    "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
@@ -10,7 +12,9 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    // "bundler" là tùy chọn được khuyến nghị cho các bundler hiện đại như Vite.
+    // Nó sẽ đảm bảo cách resolve module nhất quán hơn giữa TypeScript và Vite.
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -24,6 +28,8 @@
     "baseUrl": ".",
 
     // BƯỚC 2: Viết lại các đường dẫn một cách tường minh từ thư mục gốc.
+    // QUAN TRỌNG: Hãy chắc chắn rằng bạn đã cấu hình alias tương ứng trong vite.config.ts
+    // (ví dụ: sử dụng plugin 'vite-tsconfig-paths') để bundler có thể hiểu các đường dẫn này.
     "paths": {
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"],
@@ -34,6 +40,6 @@
       "hooks": ["src/hooks.ts"]
     }
   },
-  "include": ["src"],
-
+  // Đảm bảo rằng TypeScript cũng kiểm tra các file config ở gốc (nếu có).
+  "include": ["src", "vite.config.ts"]
 }
