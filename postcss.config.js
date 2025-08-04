@@ -1,9 +1,12 @@
-const tailwindcss = require("tailwindcss");
+// postcss.config.js
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import postcssAspectRatioPolyfill from 'postcss-aspect-ratio-polyfill';
 
-module.exports = {
+export default {
   plugins: [
-    require("postcss-aspect-ratio-polyfill"),
-    tailwindcss("./tailwind.config.js"),
-    require("autoprefixer"),
+    postcssAspectRatioPolyfill,
+    tailwindcss('./tailwind.config.js'),
+    autoprefixer,
   ],
 };

@@ -306,7 +306,7 @@ interface Plant {
     icon?: any;
 }
 const plants: Plant[] = [
-    { name: "Cây Lúa", value: "https://serverless.roboflow.com/infer/workflows/te4gri/sahi-workflow-2-2", }, // Updated TE4VISION1.0 model for Rice 01-08-25
+    { name: "Cây Lúa", value: "https://serverless.roboflow.com/infer/workflows/te4gri/sahi-workflow-3-2", }, // Updated TE4VISION1.0 model for Rice 01-08-25
     { name: "Cây Ngô", value: "https://serverless.roboflow.com/cn-detection/7?api_key=GlIzXgqHyKlL4WamnCY6" },
     // { name: "Phát hiện cây", value: "https://serverless.roboflow.com/pt-detection/17?api_key=GlIzXgqHyKlL4WamnCY6"}
 ];

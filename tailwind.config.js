@@ -1,4 +1,5 @@
-module.exports = {
+// tailwind.config.js
+export default {
   purge: {
     enabled: true,
     content: ["./src/**/*.{js,jsx,ts,tsx,vue}"],

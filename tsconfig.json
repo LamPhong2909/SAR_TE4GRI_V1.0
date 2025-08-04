@@ -14,7 +14,7 @@
     "module": "ESNext",
     // "bundler" là tùy chọn được khuyến nghị cho các bundler hiện đại như Vite.
     // Nó sẽ đảm bảo cách resolve module nhất quán hơn giữa TypeScript và Vite.
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -31,13 +31,13 @@
     // QUAN TRỌNG: Hãy chắc chắn rằng bạn đã cấu hình alias tương ứng trong vite.config.ts
     // (ví dụ: sử dụng plugin 'vite-tsconfig-paths') để bundler có thể hiểu các đường dẫn này.
     "paths": {
-      "components/*": ["src/components/*"],
-      "pages/*": ["src/pages/*"],
-      "state": ["src/state.ts"],
-      "static/*": ["src/static/*"],
-      "types/*": ["src/types/*"],
-      "utils/*": ["src/utils/*"],
-      "hooks": ["src/hooks.ts"]
+      "components/*": ["./src/components/*"],
+      "pages/*": ["./src/pages/*"],
+      "state": ["./src/state.ts"],
+      "static/*": ["./src/static/*"],
+      "types/*": ["./src/types/*"],
+      "utils/*": ["./src/utils/*"],
+      "hooks": ["./src/hooks.ts"],
     }
   },
   // Đảm bảo rằng TypeScript cũng kiểm tra các file config ở gốc (nếu có).

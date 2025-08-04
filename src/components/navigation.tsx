@@ -1,4 +1,4 @@
-import { useVirtualKeyboardVisible } from "hooks";
+import { useVirtualKeyboardVisible } from "./src/hooks";
 import React, { FC, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { MenuItem } from "types/menu";

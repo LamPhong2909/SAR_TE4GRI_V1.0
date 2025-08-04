@@ -1,11 +1,11 @@
 import React, { FC } from "react";
-import { Divider } from "components/divider";
+import { Divider } from "./src/components/divider";
 import { Header, Page } from "zmp-ui";
 import { CartItems } from "./cart-items";
 import { CartPreview } from "./preview";
 import { TermsAndPolicies } from "./term-and-policies";
 import { Delivery } from "./delivery";
-import { useVirtualKeyboardVisible } from "hooks";
+import { useVirtualKeyboardVisible } from "./src/hooks";
 
 const CartPage: FC = () => {
   const keyboardVisible = useVirtualKeyboardVisible();
