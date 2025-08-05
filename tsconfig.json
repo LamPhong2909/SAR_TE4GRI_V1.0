@@ -1,56 +1,39 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "target": "es6",
-    "module": "esnext",
-    "noImplicitAny": false,
-    "preserveConstEnums": true,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "es5",
-      "es6",
-      "es7",
-      "es2017"
-
-
-    ],
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "declaration": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "strictFunctionTypes": false,
-    "pretty": true,
-    "removeComments": true,
-    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "baseUrl": "src",
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
 
+    /* ================================================================== */
+    /* === HIỆU CHỈNH CHIẾN LƯỢC: ĐƯA MỌI THỨ VỀ CÙNG MỘT HỆ QUY CHIẾU === */
+    /* ================================================================== */
+
+    // BƯỚC 1: Đặt 'baseUrl' về thư mục gốc của toàn bộ dự án.
+    "baseUrl": ".",
+
+    // BƯỚC 2: Viết lại các đường dẫn một cách tường minh từ thư mục gốc.
     "paths": {
-      "components/*": ["components/*"],
-      "pages/*": ["pages/*"],
-      "state": ["state.ts"],
-      "static/*": ["static/*"],
-      "types/*": ["types/*"],
-      "utils/*": ["utils/*"],
-      "hooks": ["hooks.ts"]
+      "components/*": ["src/components/*"],
+      "pages/*": ["src/pages/*"],
+      "state": ["src/state.ts"],
+      "static/*": ["src/static/*"],
+      "types/*": ["src/types/*"],
+      "utils/*": ["src/utils/*"],
+      "hooks": ["src/hooks.ts"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "src"
-  ]
+  "include": ["src"],
+
 }

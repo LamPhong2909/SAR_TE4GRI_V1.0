@@ -1,3 +1,13 @@
+//SỬ DỤNG // import { closeLoading } from "zmp-sdk";
+// // ĐỂ TẮT LOADING SCREEN KHI MỞ ỨNG DỤNG LẦN ĐẦU TIÊN
+// // Đoạn này sẽ được gọi trong useEffect của component gốc (App.tsx) để tắt loading screen sau khi ứng dụng đã sẵn sàng
+
+//
+
+
+
+
+
 
 // Scan.tsx - Phiên bản Hoàn Chỉnh và Tối Ưu Hóa Camera (Ngày 10/05/2025)
 import React, { FC, useState, useEffect, useRef, useCallback } from "react";

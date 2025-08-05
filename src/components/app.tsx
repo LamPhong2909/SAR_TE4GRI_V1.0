@@ -1,6 +1,13 @@
 //ĐÂY CÓ THỂ LÀ CÁI SỬ DỤNG NHỮNG PHẦN BÉ BÉ TỪ NHỮNG PAGE ,SOURCE KHÁC ĐỂ BUILD LÊN CÁI APP HOÀN CHỈNH  ĐÚNG KHÔNG NHỈ , CHẢ BIẾT NỮA
 //NHƯ CÁI SPLASH LOADING SCREEN THÌ SẼ PHẢI Ở ĐÂY THEO LOGIC ĐỂ CODE RA CÁI LOGIC CÒN CÁI CONFIG CHỈ LÀ CÁI ĐỂ LƯU THÔNG TIN VẬY VẬY THÔI
 
+//chúng ta sẽ sử dụng Recoil để quản lý trạng thái toàn cục, ZMP UI cho giao diện người dùng, và một số thành phần khác để xây dựng ứng dụng của chúng ta.
+
+
+
+
+
+
 import React, { useEffect, useState } from "react";
 import { App, ZMPRouter, SnackbarProvider } from "zmp-ui";
 import { RecoilRoot } from "recoil";
