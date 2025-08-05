@@ -1,8 +1,8 @@
 import React, { FC, useMemo, useState } from "react";
 import { useRecoilState } from "recoil";
 import { selectedDeliveryTimeState } from "@/state";
-import { displayDate, displayHalfAnHourTimeRange } from "@/utilsdate";
-import { matchStatusBarColor } from "@/utilsdevice";
+import { displayDate, displayHalfAnHourTimeRange } from "@/utils/date";
+import { matchStatusBarColor } from "@/utils/device";
 import { Picker } from "zmp-ui";
 
 export const TimePicker: FC = () => {
