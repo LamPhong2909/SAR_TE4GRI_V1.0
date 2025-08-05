@@ -7,7 +7,7 @@ import { Banner } from "./banner"; // Có banner
 import { Categories } from "./categories"; //
 import { Introduction } from "./introduction";
 import { ProductList } from "./product-list";
-import { Divider } from "./src/components/divider";
+import { Divider } from "@/components/divider";
 
 const HomePage: React.FunctionComponent = () => {
   return (

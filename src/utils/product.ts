@@ -1,7 +1,7 @@
 import { createOrder } from "zmp-sdk";
-import { Option, Product } from "types/product";
-import { getConfig } from "./config";
-import { SelectedOptions } from "types/cart";
+import { Option, Product } from "@/types/product";
+import { getConfig } from "@/utils/config";
+import { SelectedOptions } from "@/types/cart";
 
 export function calcFinalPrice(product: Product, options?: SelectedOptions) {
   let finalPrice = product.price;

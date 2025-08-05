@@ -1,11 +1,11 @@
-import { ProductItem } from "components/product/item";
+import { ProductItem } from "@/components/product/item";
 import React, { FC, Suspense } from "react";
 import { useRecoilValue } from "recoil";
 import {
   categoriesState,
   productsByCategoryState,
   selectedCategoryIdState,
-} from "state";
+} from "@/state";
 import { Box, Header, Page, Tabs, Text } from "zmp-ui";
 
 const CategoryPicker: FC = () => {

@@ -1,14 +1,14 @@
 import { atom, selector, selectorFamily } from "recoil";
 import { getLocation, getPhoneNumber, getUserInfo } from "zmp-sdk";
-import logo from "static/logo.png";
-import { Category } from "types/category";
-import { Product, Variant } from "types/product";
-import { Cart } from "types/cart";
-import { Notification } from "types/notification";
-import { calculateDistance } from "utils/location";
-import { Store } from "types/delivery";
-import { calcFinalPrice } from "utils/product";
-import { wait } from "utils/async";
+import logo from "@/static/logo.png";
+import { Category } from "@/types/category";
+import { Product, Variant } from "@/types/product";
+import { Cart } from "@/types/cart";
+import { Notification } from "@/types/notification";
+import { calculateDistance } from "@/utils/location";
+import { Store } from "@/types/delivery";
+import { calcFinalPrice } from "@/utils/product";
+import { wait } from "@/utils/async";
 import categories from "../mock/categories.json";
 
 export const userState = selector({

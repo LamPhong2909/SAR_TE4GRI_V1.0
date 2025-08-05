@@ -1,6 +1,6 @@
-import { FinalPrice } from "components/display/final-price";
+import { FinalPrice } from "@/components/display/final-price";
 import React, { FC } from "react";
-import { Product } from "types/product";
+import { Product } from "@/types/product";
 import { Box, Text } from "zmp-ui";
 import { ProductPicker } from "./picker";
 

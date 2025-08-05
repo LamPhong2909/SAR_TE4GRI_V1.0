@@ -1,6 +1,6 @@
 import React, { FC, useMemo } from "react";
-import { SelectedOptions } from "types/cart";
-import { Product } from "types/product";
+import { SelectedOptions } from "@/types/cart";
+import { Product } from "@/types/product";
 
 export const DisplaySelectedOptions: FC<{
   children: Product;

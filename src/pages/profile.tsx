@@ -44,9 +44,9 @@ import { Box, Header, Icon, Page, Text } from "zmp-ui"; // Trước giờ cứ d
 //          này.
 //       3. **Lấy URL của các tệp**: Sau khi tải lên, Cloudinary sẽ cung cấp cho bạn các URL để truy cập các tệp hình ảnh. Bạn
 //          có thể sử dụng các URL này trong mã nguồn của mình để hiển thị các
-import subscriptionDecor from "static/subscription-decor.svg";
-import { ListRenderer } from "components/list-renderer";
-import { useToBeImplemented } from "hooks";
+import subscriptionDecor from "@/static/subscription-decor.svg";
+import { ListRenderer } from "@/components/list-renderer";
+import { useToBeImplemented } from "@/hooks";
 
 //import "../css/profile.scss"; // Đây là file css của trang profile.tsx này (sẽ TẠO SAU NẾU CẦN THIẾT) để định dạng và tạo kiểu cho các thành phần trong trang hồ sơ cá nhân.
 import { AdvancedImage } from "@cloudinary/react"; // Cho các ảnh static , ví dụ logo hay banner hay background gì đó

@@ -276,9 +276,9 @@ Các thành phần cần test(sử dụng folder "Testing" trong src để chứ
 
 // Scan.tsx - Phiên bản Hoàn Chỉnh và Tối Ưu Hóa Camera (Ngày 10/05/2025)
 import React, { FC, useState, useEffect, useRef, useCallback } from "react";
-import "../css/app.scss"; 
+import "@/css/app.scss"; 
 import { useNavigate } from "zmp-ui"; 
-import * as _image from "static/cloudIMG"; //Đây là cách import ảnh static từ Cloudinary trong ZMP SDK, bạn có thể thay đổi theo cách bạn muốn.
+import * as _image from "@/static/cloudIMG"; //Đây là cách import ảnh static từ Cloudinary trong ZMP SDK, bạn có thể thay đổi theo cách bạn muốn.
 // import { openImageLibrary } from "zmp-sdk/apis"; // Giả sử bạn có một hàm để mở thư viện ảnh và chọn ảnh
 //import { handleCaptureImage, processCapturedImage } from "../utils/scanUtils"; // Gi
 import { Button, Icon, Text } from "zmp-ui"; // 

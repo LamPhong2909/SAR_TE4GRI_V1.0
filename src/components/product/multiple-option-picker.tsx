@@ -1,6 +1,6 @@
-import { DisplayPriceChange } from "components/display/price-change";
+import { DisplayPriceChange } from "@/components/display/price-change";
 import React, { FC } from "react";
-import { MultipleOptionVariant, Product } from "types/product";
+import { MultipleOptionVariant, Product } from "@/types/product";
 import { Box, Checkbox, Text } from "zmp-ui";
 
 export const MultipleOptionPicker: FC<{

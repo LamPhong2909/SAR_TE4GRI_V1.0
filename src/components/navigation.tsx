@@ -1,9 +1,9 @@
-import { useVirtualKeyboardVisible } from "./src/hooks";
+import { useVirtualKeyboardVisible } from "@/hooks";
 import React, { FC, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
-import { MenuItem } from "types/menu";
+import { MenuItem } from "@/types/menu";
 import { BottomNavigation, Icon } from "zmp-ui";
-import { CartIcon } from "./cart-icon";
+import { CartIcon } from "@/cart-icon";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 

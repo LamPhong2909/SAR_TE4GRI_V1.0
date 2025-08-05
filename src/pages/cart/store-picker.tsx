@@ -1,5 +1,5 @@
-import { ActionSheet } from "components/fullscreen-sheet";
-import { ListItem } from "components/list-item";
+import { ActionSheet } from "@/components/fullscreen-sheet";
+import { ListItem } from "@/components/list-item";
 import React, { FC, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -12,9 +12,9 @@ import {
   requestLocationTriesState,
   selectedStoreIndexState,
   selectedStoreState,
-} from "state";
-import { Store } from "types/delivery";
-import { displayDistance } from "utils/location";
+} from "@/state";
+import { Store } from "@/types/delivery";
+import { displayDistance } from "@/utils/location";
 
 export const StorePicker: FC = () => {
   const [visible, setVisible] = useState(false);

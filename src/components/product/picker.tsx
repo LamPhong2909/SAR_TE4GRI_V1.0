@@ -1,12 +1,12 @@
-import { FinalPrice } from "components/display/final-price";
-import { Sheet } from "components/fullscreen-sheet";
+import { FinalPrice } from "@/components/display/final-price";
+import { Sheet } from "@/components/fullscreen-sheet";
 import React, { FC, ReactNode, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useSetRecoilState } from "recoil";
-import { cartState } from "state";
-import { SelectedOptions } from "types/cart";
-import { Product } from "types/product";
-import { isIdentical } from "utils/product";
+import { cartState } from "@/state";
+import { SelectedOptions } from "@/types/cart";
+import { Product } from "@/types/product";
+import { isIdentical } from "@/utils/product";
 import { Box, Button, Text } from "zmp-ui";
 import { MultipleOptionPicker } from "./multiple-option-picker";
 import { QuantityPicker } from "./quantity-picker";

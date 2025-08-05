@@ -1,8 +1,8 @@
-import { DisplayPrice } from "components/display/price";
+import { DisplayPrice } from "@/components/display/price";
 import React, { FC } from "react";
 import { useRecoilValue } from "recoil";
-import { totalPriceState, totalQuantityState } from "state";
-import pay from "utils/product";
+import { totalPriceState, totalQuantityState } from "@/state";
+import pay from "@/utils/product";
 import { Box, Button, Text } from "zmp-ui";
 
 export const CartPreview: FC = () => {

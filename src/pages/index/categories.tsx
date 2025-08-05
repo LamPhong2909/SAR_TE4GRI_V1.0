@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Text } from "zmp-ui";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { categoriesState, selectedCategoryIdState } from "state";
+import { categoriesState, selectedCategoryIdState } from "@/state";
 import { useNavigate } from "react-router-dom";
 import { AdvancedImage } from "@cloudinary/react";
 
-import * as image from "static/cloudIMG"; 
+import * as image from "@/static/cloudIMG"; 
 
 export const Categories = () => {
   const categories = useRecoilValue(categoriesState);

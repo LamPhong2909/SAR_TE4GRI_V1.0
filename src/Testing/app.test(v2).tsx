@@ -34,7 +34,7 @@ import React from 'react';
 
 // Import các tiện ích cao cấp từ hạ tầng kiểm thử đã được thiết lập.
 // Đây là cầu nối quan trọng, đảm bảo sự hiệp đồng giữa hai file.
-import { testUtils } from './setupTest';
+import { testUtils } from '@/Testing/setupTest';
 
 // --- II. MOCK DEFINITIONS & TEST DATA FACTORIES ---
 // Định nghĩa các kiểu dữ liệu (types) và interface để sử dụng trong các test case.

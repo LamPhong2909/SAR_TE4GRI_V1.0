@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import react from "@vitejs/plugin-react";
 import { configDefaults } from "vitest/config";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +14,11 @@ export default defineConfig({
   // Việc thêm plugin cho Vue (@vitejs/plugin-vue) là không cần thiết và có thể gây ra lỗi không mong muốn.
   // Chúng ta chỉ cần giữ lại plugin cho React và tsconfigPaths.
   plugins: [react(), tsconfigPaths()],
-
+   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   // Cấu hình cho Vitest (testing) không ảnh hưởng đến quá trình build deploy,
   // nên chúng ta có thể giữ nguyên nó.
   test: {

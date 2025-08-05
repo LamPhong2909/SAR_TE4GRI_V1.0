@@ -47,7 +47,7 @@ import React from 'react';
 // IMPORTANT: Ensure this path is correct relative to your project structure.
 // For example, if app.test.tsx is in 'src/tests/' and setupTests.ts is in 'src/testing/',
 // the path should be '../testing/setupTests'.
-import { testUtils } from '../testing/setupTests';
+import { testUtils } from '@/testing/setupTests';
 
 // Import React Testing Library for Component Testing.
 // Ensure '@testing-library/react' and '@testing-library/jest-dom' are installed.

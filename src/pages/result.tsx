@@ -12,7 +12,7 @@ import {
   IconPaymentFail,
   IconPaymentLoading,
   IconPaymentSuccess,
-} from "components/payment-icon";
+} from "@/components/payment-icon";
 
 interface RenderResultProps {
   title?: string;

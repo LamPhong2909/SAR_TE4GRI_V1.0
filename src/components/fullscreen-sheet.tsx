@@ -1,4 +1,4 @@
-import { useMatchStatusTextColor } from "hooks";
+import { useMatchStatusTextColor } from "@/hooks";
 import React, { FC } from "react";
 import { Sheet as OrginalSheet } from "zmp-ui";
 import { ActionSheetProps, SheetProps } from "zmp-ui/sheet";
